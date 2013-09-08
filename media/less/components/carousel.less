@@ -1,0 +1,55 @@
+/* =========================================
+
+COMPONENTS/CAROUSEL.LESS
+
+=========================================*/
+
+#home-carousel{
+	margin: 150px 0 60px;
+	ol.carousel-indicators{
+		margin-bottom: -50px;
+		li{
+			border-color:@purple;
+			background: @seafoam;
+		}
+		li.active{
+			background: @purple;
+			border-color:@purple;
+		}	
+	}
+	div.carousel-inner{
+
+	}
+}
+
+#product-carousel{
+	@media (max-width: @screen-xs-max){
+		margin-top: 100px;
+		margin-bottom: 130px;
+	}
+	@media (min-width: @screen-sm){
+		margin-top: 0px;
+		margin-bottom: 140px;
+	}
+	ol.carousel-indicators{
+		margin-bottom: -130px;
+		width: 100%;
+		left: 0;
+		margin-left: 0;
+		padding: 15px;
+		@media (min-width: @screen-sm){
+			margin-bottom: -140px;
+		}
+		li{
+			height: 100px;
+			border-radius: 0;
+			border: none;
+			margin: 0;
+			background-size: 10%;
+		}
+		li.active {
+			border: none;
+		}
+	}
+}
+

@@ -1,0 +1,67 @@
+/* =========================================
+
+VIEWS/HOME.LESS
+
+=========================================*/
+
+#page-home{
+	.featureBoxes{
+		.featureBox{
+			margin: 20px 0;
+			overflow: hidden;
+			a{
+				color: @darkGreen;
+			}
+			a:hover{
+				text-decoration: none;
+				color: @red;
+			}
+			a.col-xs-12{
+				padding: 0;
+			}
+			img{
+				width: 100%;
+				background-size: 100%;
+			}
+			img.featureBoxPost{
+				margin: -75px 0 0 12.5%;
+				width: 75%;
+				background-size: 100%;
+				@media (min-width: @screen-md){
+					margin-top: -85px;
+				}
+				@media (min-width: @screen-lg){
+					margin-top: -100px;
+				}
+			}
+			img.featureBoxBorder{
+				margin: 0 auto;
+				width: 75%;
+			}
+			h3{
+				text-align: center;
+				font-family: 'halohandletterregular';
+				font-weight: 400;
+			}
+			p{
+				font-family: Garamond, Georgia, serif;
+				color: @purple;
+				font-size: 14px;
+				text-align: center;
+				margin-top: 5px;
+				@media (min-width: @screen-sm){
+					width: 90%;
+					margin-left: 5%;
+				}
+				@media (min-width: @screen-md){
+					width: 80%;
+					margin-left: 10%;
+				}
+				@media (min-width: @screen-lg){
+					width: 75%;
+					margin-left: 12.5%;
+				}
+			}
+		}
+	}	
+}

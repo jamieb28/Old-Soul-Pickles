@@ -1,0 +1,167 @@
+/* =========================================
+
+VIEWS/PRODUCTS.LESS
+
+=========================================*/
+
+
+#page-products{
+	.products {
+		margin: 40px 0;
+		@media (min-width: @screen-sm){
+			background: url('../img/products/productBG.jpg') no-repeat;
+			background-size: 100%;
+			overflow: hidden;
+		}
+		.product {
+			margin: 30px 0px;
+			overflow: hidden;
+			a{
+				color: #000;
+				img{
+					width: 100%;
+					background-size: 100%;
+					margin-bottom: 10px;
+					@media (min-width: @screen-sm){
+						width: 50%;
+						margin-left: 25%;
+						margin-bottom: 0;
+					}
+					@media (min-width: @screen-md){
+						width: 60%;
+						margin-left: 20%;
+					}
+					@media (min-width: @screen-md){
+						width: 50%;
+						margin-left: 25%;
+					}
+				}
+				img.nameplate{
+					width: 100%;
+					background-size: 100%;
+					margin-bottom: 10px;
+					margin-top: 4px;
+					@media (min-width: @screen-sm){
+						width: 70%;
+						margin-left: 15%;
+						margin-bottom: 0;
+					}
+					@media (min-width: @screen-md){
+						width: 60%;
+						margin-left: 20%;
+					}
+					@media (min-width: @screen-md){
+						width: 50%;
+						margin-left: 25%;
+					}
+				}
+				h4 {
+					text-align: center;
+					font-family: 'halohandletterregular';
+					font-size: 34px;
+					color: @purple;
+					background: @cream;
+				}
+			}
+			a:hover {
+				text-decoration: none;
+			}
+		}
+		.row1{
+			@media (min-width: @screen-sm){
+				margin-top: 61px;
+			}
+			@media (min-width: @screen-md){
+				margin-top: 70px;
+			}
+			@media (min-width: @screen-lg){
+				margin-top: 75px;
+			}
+		}
+		.row2{
+			@media (min-width: @screen-sm){
+				margin-top: -15px;
+			}
+			@media (min-width: @screen-md){
+				margin-top: 0px;
+			}
+		}
+		.row3{
+			@media (min-width: @screen-sm){
+				margin-top: -15px;
+			}
+			@media (min-width: @screen-md){
+				margin-top: 0px;
+			}
+		}
+	}
+	.productDetail{
+		@media (min-width: @screen-sm){
+			margin: 60px auto;
+		}
+		.productDescription{
+			background: @seafoam;
+			overflow: hidden;
+			border-radius: 5px;
+			@media (max-width: @screen-xs-max){
+				margin-top: 40px;  
+			}
+			h1{
+				text-align: center;
+				font-family: 'halohandletterregular';
+				font-size: 40px;
+				color: @purple;
+				@media (min-width: @screen-sm){
+					font-size: 50px;  
+				}
+				@media (min-width: @screen-md){
+					font-size: 54px;  
+				}
+			}
+			h4{
+				text-align: center;
+				font-size: 14px;
+				color: @darkGreen;
+				font-weight: 400;
+				font-family: Garamond, Georgia, Serif;
+				@media (min-width: @screen-sm){
+					font-size: 16px;  
+				}
+				@media (min-width: @screen-md){
+					font-size: 18px;  
+				}
+			}
+			p{
+				color: @purple;
+				padding: 15px 0;
+				line-height: 1.5em;
+				@media (min-width: @screen-sm){
+					font-size: 16px;  
+				}
+				@media (min-width: @screen-md){
+					font-size: 18px;  
+				}
+			}
+		}
+		.ingredients{
+			overflow: hidden;
+			background: @lightGreen;
+			border-radius: 5px;
+			@media (max-width: @screen-xs-max){
+				margin-top: 40px;
+			}
+			@media (min-width: @screen-sm){
+				padding: 15px;  
+			}
+			h4{
+				text-align: left;
+				font-family: 'halohandletterregular';
+				font-size: 34px;
+				color: @purple; 
+			}
+			p{
+				color: @purple;
+			}
+		}	
+	}
+}

@@ -1,0 +1,207 @@
+/* =========================================
+
+COMPONENTS/NAVBAR.LESS
+
+=========================================*/
+
+#page-home .mobileNav a.navHome,
+#page-about .mobileNav a.navAbout,
+#page-pickling .mobileNav a.navPickling,
+#page-products .mobileNav a.navProducts,
+#page-recipes .mobileNav a.navRecipes,
+#page-contact .mobileNav a.navContact {
+	// background: @cream;
+	color: @darkGreen;
+}
+
+.mobileNav{ 
+	.navbar{
+		background: @seafoam;
+		border-bottom: none;
+		.navbar-header {
+			button{
+				border-color: @darkGreen;
+				background: @darkGreen;
+			}
+			button:hover{
+				background: @purple;
+			}
+			.navbar-toggle{
+				margin-top: 16px;
+			}
+			.navbar-brand{
+				padding: 10px 15px;
+				@media (min-width: @screen-sm){
+					display: none;
+				}
+				img.headerLogo{
+					height: 50px;
+				}
+			}
+			img.headerBottom{
+				width: 175px;
+				float: left;
+				margin-top: 22px;
+				position: relative;
+				left: 50%;
+				margin-left: -155px;
+				@media (min-width: @screen-sm){
+					display: none;
+				}
+			}		
+		}
+		.navbar-collapse{
+			border-color: @darkGreen;
+			@media (max-width: @screen-xs-max){
+				min-height: 290px;
+			}
+			@media (min-width: @screen-sm){
+				background: url('../img/headerBG.png') no-repeat center;
+				background-size: 100%;
+				padding: 30px 0;
+			}
+			.navbar-nav{
+				margin: 7.5px -15px;
+				@media (min-width: @screen-sm) {
+					margin: 5px 40px 0;
+				}
+				li{
+					a {
+						color: @purple;
+						width: 100%;
+						font-family: 'halohandletterregular';
+		 				text-transform: lowercase;
+						font-size: 44px;
+						text-align: center;
+						padding-top: 15px;
+						padding-bottom: 10px;
+						@media (min-width: @screen-sm) {
+							color: @cream;
+							font-size: 34px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#page-home .screenNav a.navHome,
+#page-about .screenNav a.navAbout,
+#page-pickling .screenNav a.navPickling,
+#page-products .screenNav a.navProducts,
+#page-recipes .screenNav a.navRecipes,
+#page-contact .screenNav a.navContact {
+	color: @purple;
+}
+
+.screenNav{
+	background: @seafoam;
+	.container{
+		overflow: hidden;
+		@media (min-width: @screen-sm){
+			background: url('../img/headerBG.png') no-repeat center;
+			background-size: 100%;
+			min-height: 115px;
+			margin-top: 10px;
+			padding: 10px 0;
+		}
+		@media (min-width: @screen-md){
+			min-height: 145px;
+		}
+		@media (min-width: @screen-lg){
+			min-height: 165px;
+		}
+		.headerLogo{
+			text-indent: -2000px;
+			@media (min-width: @screen-sm){
+				padding: 50px 10px;
+			}
+			@media (min-width: @screen-md){
+				padding: 62px 10px;
+			}
+		}
+		ul.nav{
+			padding: 0;
+			@media (min-width: @screen-sm){
+				margin-top: 36px;
+				margin-left: -15px;
+			}
+			@media (min-width: @screen-md){
+				margin-top: 38px;
+			}
+			@media (min-width: @screen-lg){
+				margin-top: 40px;
+			}
+			li{
+				width: 100%;
+				@media (max-width: @screen-xs-max){
+					margin-bottom: 10px;
+				}
+				@media (min-width: @screen-sm){
+					overflow: hidden;
+					width: 33.3333%;
+					float: left;
+				}
+				a{
+					color: @cream;
+					width: 100%;
+					font-family: 'halohandletterregular';
+					text-transform: lowercase;
+					@media (max-width: @screen-xs-max){
+						text-align: center;
+						font-size: 26px;
+					}
+					@media (min-width: @screen-sm){
+						font-size: 28px;
+						text-align: right;
+						padding: 10px 0;
+					}
+					@media (min-width: @screen-md){
+						font-size: 36px;
+						text-align: right;
+						padding: 20px 0;
+					}
+					@media (min-width: @screen-lg){
+						padding: 18px 0;
+					}
+				}
+				a:hover{
+					background: none;
+					color: @purple;
+				}
+				a.aboutLink{
+					@media (min-width: @screen-sm){
+						padding-right: 12px;
+					}
+					@media (min-width: @screen-md){
+						padding-right: 22px;
+					}
+					@media (min-width: @screen-lg){
+						padding-right: 22px;
+					}
+				}	
+			}	
+		}
+		ul.nav.last > li > a{
+			text-align: center;
+		}
+	}
+	img.headerBottom{ 
+		@media (min-width: @screen-sm){
+			float: left;
+			width: 25%;
+			margin-left: 37.5%;
+			padding-bottom: 20px;
+		}
+		@media (min-width: @screen-md){
+			width: 20%;
+			margin-left: 40%;
+		}
+		@media (min-width: @screen-lg){
+			width: 15%;
+			margin-left: 42.5%;
+		}
+	}
+}	

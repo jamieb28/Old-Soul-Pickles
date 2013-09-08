@@ -1,0 +1,80 @@
+/* =========================================
+
+VIEWS/RECIPES.LESS
+
+=========================================*/
+
+#page-recipes{
+	ul.nav.nav-tabs{
+		margin-top: 85px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid @darkGreen;
+		@media (min-width: @screen-sm){
+			margin-top: 0px;
+		}
+		li {
+			width: 100%;
+			a{
+				color: @darkGreen;
+				// font-size: 18px;
+				width: 100%;
+				text-align: center;
+				font-family: 'halohandletterregular';
+				font-size: 28px;
+				text-transform: lowercase;
+			}
+		}
+		li.active > a{
+			background-color: @lightGreen;
+			border: none;
+			border-radius: 5px;
+			color: @purple;
+		}
+	}
+	.recipe{
+		margin: 40px 0;
+		background: @seafoam;
+		padding: 40px 20px;
+		img{
+			background-size: 100%;
+			background-position: center;
+			margin-bottom: 20px;
+		}
+		h2{
+			font-family: 'halohandletterregular';
+			font-size: 44px;
+			color: @purple;
+			text-align: left;
+			margin-top: 0;
+			@media (max-width: @screen-xs-max){
+				text-align: center;
+			}
+		}
+		ul.ingredients{
+			color: @cream;
+			background: @darkGreen;
+			border-radius: 5px;
+			padding: 20px;
+			border: 1px dashed @purple;
+			margin-bottom: 20px;
+			@media (min-width: @screen-sm){
+				// min-height: 300px;
+			}
+			li{
+				margin-left: 20px;
+				font-family: Garamond, Georgia, Serif;
+				font-size: 16px;
+				em{
+					font-style: normal;
+					font-weight: bold;
+				}
+			}
+		}
+		p{
+			color: @purple;
+			font-family: Garamond, Georgia, Serif;
+			font-size: 16px;
+			overflow: hidden;
+		}
+	}
+}

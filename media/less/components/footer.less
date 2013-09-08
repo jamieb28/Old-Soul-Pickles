@@ -1,0 +1,50 @@
+/* =========================================
+
+COMPONENTS/FOOTER.LESS
+
+=========================================*/
+
+#footer{
+	margin: 40px 0 10px;
+	.container{
+		.footer-nav{
+			background: url('../img/footerBG.png') no-repeat left;
+			background-size: 100%;
+			min-height: 42px;
+			overflow: hidden;
+			@media (min-width: @screen-sm){
+				min-height: 68px;
+			}
+			ul {
+				margin-top: 25px;
+				padding: 0 10px;
+				float: left;
+				list-style: none;
+				li {
+					float: left;
+					a {
+						color: @cream;
+						padding: 20px 20px 20px 0;
+						font-family: Garamond, Georgia, serif;
+					}
+					a:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		p{
+			font-family: Garamond, Georgia, serif;
+			color: @cream;
+			@media (max-width: @screen-xs-max){
+				text-align: center;
+				margin-top: 12px;
+			}
+			@media (min-width: @screen-sm){
+				text-align: right;
+				margin-top: 25px;
+			}
+		}
+	}
+}
+
