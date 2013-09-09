@@ -5689,12 +5689,23 @@ VIEWS/ABOUT.LESS
 
 =========================================*/
 #page-about .hero {
-  margin: 40px 0;
-  overflow: hidden;
+  margin: 80px 0 30px;
+}
+@media (min-width: 768px) {
+  #page-about .hero {
+    margin: 10px 0 40px;
+    overflow: hidden;
+  }
 }
 #page-about .hero img {
   width: 100%;
   background-size: 100%;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  #page-about .hero img {
+    margin-bottom: 0;
+  }
 }
 #page-about .aboutStory {
   margin: 20px 0;
@@ -5703,13 +5714,330 @@ VIEWS/ABOUT.LESS
   font-family: Garamond, Georgia, Serif;
   font-size: 16px;
   margin: 20px 0;
+  color: #5f1a2d;
 }
 #page-about .aboutStory p.signature {
   font-family: 'halohandletterregular';
   font-weight: 400;
-  font-size: 48px;
+  font-size: 40px;
   margin-top: 20px;
   color: #5f1a2d;
+}
+@media (min-width: 768px) {
+  #page-about .aboutStory p.signature {
+    font-size: 48px;
+  }
+}
+/* =========================================
+
+VIEWS/PICKLING.LESS
+
+=========================================*/
+#page-pickling .pickling-page {
+  margin-top: 90px;
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page {
+    margin-top: 40px;
+  }
+}
+#page-pickling .pickling-page .picklingHeader img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingHeader img {
+    width: 50%;
+    margin: 0 25%;
+  }
+}
+#page-pickling .pickling-page .picklingHeader h1 {
+  font-family: 'halohandletterregular';
+  font-size: 28px;
+  color: #5f1a2d;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingHeader h1 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingHeader h1 {
+    font-size: 44px;
+  }
+}
+#page-pickling .pickling-page .picklingVideo {
+  margin: 25px auto;
+}
+#page-pickling .pickling-page .picklingVideo iframe {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  border-image: url('../img/pickling/videoBorder.png') 47% repeat;
+  border-width: 8px;
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingVideo iframe {
+    width: 80%;
+    min-height: 319px;
+    margin: 0 10%;
+  }
+}
+#page-pickling .pickling-page .picklingProcess {
+  margin: 40px 0 0px;
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess {
+    background: #d1e6d3;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 20px 0;
+  }
+}
+#page-pickling .pickling-page .picklingProcess .step {
+  margin-bottom: 40px;
+}
+#page-pickling .pickling-page .picklingProcess .step h3 {
+  font-family: 'halohandletterregular';
+  font-size: 32px;
+  color: #5f1a2d;
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step h3 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step h3 {
+    font-size: 36px;
+    margin: 0;
+  }
+}
+#page-pickling .pickling-page .picklingProcess .step p {
+  font-size: 18px;
+  color: #a7af39;
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step p {
+    font-size: 20px;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step1 .stepDirections {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step1 .stepDirections {
+    margin-top: 40px;
+    background: #d1e6d3;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step2 {
+    margin-top: -100px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step2 img {
+    width: 50%;
+    margin-top: -40px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step2 img {
+    margin-top: -150px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step2 .stepDirections {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step2 .stepDirections {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step3 {
+    margin-top: -50px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step3 img {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step3 img {
+    margin-top: -50px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step3 .stepDirections {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step3 .stepDirections {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step4 {
+    margin-top: -75px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step4 img {
+    margin-top: -25px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step4 img {
+    margin-top: -10px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step4 .stepDirections {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step4 .stepDirections {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step5 {
+    margin-top: -100px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step5 img {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step5 img {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step5 .stepDirections {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step5 .stepDirections {
+    margin-top: 150px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step6 {
+    margin-top: -40px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step6 img {
+    margin-top: -20px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step6 img {
+    width: 60%;
+    margin-top: -75px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step6 .stepDirections {
+    margin-top: 75px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step6 .stepDirections {
+    margin-top: 65px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step7 {
+    margin-top: -125px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step7 img {
+    margin-top: -20px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step7 img {
+    width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step7 .stepDirections {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step7 .stepDirections {
+    margin-top: 175px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step8 {
+    margin-top: -100px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step8 img {
+    margin-top: -50px;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step8 img {
+    margin-top: -100px;
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step8 .stepDirections {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step8 .stepDirections {
+    margin-top: 150px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step9 img {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingProcess .step9 .stepDirections {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step9 .stepDirections {
+    margin-top: 150px;
+  }
 }
 /* =========================================
 
