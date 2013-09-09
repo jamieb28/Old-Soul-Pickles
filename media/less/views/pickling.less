@@ -35,31 +35,38 @@ VIEWS/PICKLING.LESS
 		}
 		.picklingVideo{
 			margin: 25px auto;
-			iframe{
+			@media (min-width: @screen-sm){
+				margin: 40px 0;
+			}
+			video{
 				width: 100%;
-				height: auto;
-				margin: 0 auto;
+				min-height: 120px;
 				padding: 0;
 				border: none;
 				// border-image: url('../img/pickling/videoBorderTop.png') 47% 0 repeat;
 				// border-image: url('../img/pickling/videoBorderSide.png') auto 47% repeat;
-				border-image: url('../img/pickling/videoBorder.png') 47% repeat;
-				border-width: 8px;
-				@media (min-width: @screen-sm){
-					width: 80%;
-					min-height: 319px;
-					margin: 0 10%;
-				}
+				// border-image: url('../img/pickling/videoBorder.png') 47% repeat;
+				// border-width: 8px;
 			}
 		}
 		.picklingProcess{
 			margin: 40px 0 0px;
 			@media (min-width: @screen-sm){
-				background: @seafoam;
+				// background: url('../img/pickling/PathTab.png') no-repeat left;
+				// background-size: 100%;
+				background-color: @seafoam;
 				overflow: hidden;
 				border-radius: 10px;
 				padding: 20px 0;
 			}
+			// @media (min-width: @screen-md){
+			// 	background: url('../img/pickling/PathDesk.png') no-repeat left;
+			// 	background-size: 100%;
+			// 	background-color: @seafoam;
+			// 	overflow: hidden;
+			// 	border-radius: 10px;
+			// 	padding: 20px 0;
+			// }	
 			.step{
 				margin-bottom: 40px;
 				h3 {
@@ -90,12 +97,11 @@ VIEWS/PICKLING.LESS
 				.stepDirections{
 					@media (min-width: @screen-sm){
 						margin-top: 20px;
+						background: @seafoam;
+						padding: 10px 0;
 					}
 					@media (min-width: @screen-md){
 						margin-top: 40px;
-						background: @seafoam;
-						border-radius: 5px;
-						padding: 10px;
 					}
 				}
 			}
@@ -115,6 +121,8 @@ VIEWS/PICKLING.LESS
 				.stepDirections{
 					@media (min-width: @screen-sm){	
 						margin-top: 100px;
+						background: @seafoam;
+						padding: 10px 0;
 					}		
 					@media (min-width: @screen-md){	
 						margin-top: 0px;
@@ -136,6 +144,8 @@ VIEWS/PICKLING.LESS
 				.stepDirections{
 					@media (min-width: @screen-sm){
 						margin-top: 80px;
+						background: @seafoam;
+						padding: 10px 0;
 					}
 					@media (min-width: @screen-md){	
 						margin-top: 25px;
@@ -157,6 +167,8 @@ VIEWS/PICKLING.LESS
 				.stepDirections{
 					@media (min-width: @screen-sm){
 						margin-top: 40px;
+						background: @seafoam;
+						padding: 10px 0;
 					}
 					@media (min-width: @screen-md){
 					margin-top: 25px;	
@@ -165,23 +177,26 @@ VIEWS/PICKLING.LESS
 			}
 			.step5 {
 				@media (min-width: @screen-md){
-					margin-top: -100px;	
+					margin-top: -60px;	
 				}
 				img {
 					@media (min-width: @screen-sm){
-						margin-top: 50px;
+						margin-top: -225px;
 					}
 					@media (min-width: @screen-md){
 						width: 75%;
+						margin-top: 30px;
 					}
 				}
 				.stepDirections{
 					@media (min-width: @screen-sm){	
-						margin-top: 100px;
+						margin-top: 150px;
+						background: @seafoam;
+						padding: 10px 0;
 					}
 					@media (min-width: @screen-md){
-					margin-top: 150px;	
-				}
+						margin-top: 175px;	
+					}
 				}	
 			}
 			.step6 {
@@ -193,13 +208,14 @@ VIEWS/PICKLING.LESS
 						margin-top: -20px;
 					}
 					@media (min-width: @screen-md){
-						width: 60%;
-						margin-top: -75px;
+						margin-top: -50px;
 					}
 				}		
 				.stepDirections{
 					@media (min-width: @screen-sm){
 						margin-top: 75px;
+						background: @seafoam;
+						padding: 10px 0;
 					}
 					@media (min-width: @screen-md){
 						margin-top: 65px;
@@ -221,6 +237,8 @@ VIEWS/PICKLING.LESS
 				.stepDirections{
 					@media (min-width: @screen-sm){
 						margin-top: 100px;
+						background: @seafoam;
+						padding: 10px 0;
 					}
 					@media (min-width: @screen-md){
 						margin-top: 175px;
@@ -244,6 +262,8 @@ VIEWS/PICKLING.LESS
 				.stepDirections{
 					@media (min-width: @screen-sm){
 						margin-top: 120px;
+						background: @seafoam;
+						padding: 10px 0;
 					}
 					@media (min-width: @screen-md){
 						margin-top: 150px;
@@ -251,17 +271,25 @@ VIEWS/PICKLING.LESS
 				}	
 			}
 			.step9 {
+				@media (min-width: @screen-md){
+					margin-top: -40px;
+				}
 				img {
 					@media (min-width: @screen-sm){
 						margin-top: 20px;
+					}
+					@media (min-width: @screen-md){
+						margin-top: -40px;
 					}
 				}	
 				.stepDirections{
 					@media (min-width: @screen-sm){
 						margin-top: 80px;
+						background: @seafoam;
+						padding: 10px;
 					}
 					@media (min-width: @screen-md){
-						margin-top: 150px;
+						margin-top: 100px;
 					}
 				}	
 			}

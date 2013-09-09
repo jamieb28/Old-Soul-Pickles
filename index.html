@@ -28,36 +28,36 @@
 
     <!--#include virtual="media/includes/navbar.html" -->
 
-    <div class="container">
+    <div class="container hidden-xs">
 
         <div class="row">
             <!-- BEGIN CAROUSEL -->
 
-            <div id="home-carousel" class="carousel slide" data-interval="3000">
+            <div id="home-carousel" class="carousel slide col-sm-12" data-interval="3000">
 
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#home-carousel" data-slide-to="1"></li>
-                <li data-target="#home-carousel" data-slide-to="2"></li>
+                <li data-target="#home-carousel" data-slide-to="0" class="bullet1 active"></li>
+                <li data-target="#home-carousel" data-slide-to="1" class="bullet2"></li>
+                <li data-target="#home-carousel" data-slide-to="2" class="bullet3"></li>
             </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
 
-                <div class="item featureOne active">
-                    <img src="media/img/home/featureOne.jpg" alt="bg">
+                    <div class="item featureOne active">
+                        <img src="media/img/home/featureOne.jpg" alt="bg">
+                    </div>
+
+                    <div class="item featureTwo">
+                        <img src="media/img/home/featureTwo.jpg" alt="bg">
+                    </div>
+
+                    <div class="item featureThree">
+                        <img src="media/img/home/featureThree.jpg" alt="bg">
+                    </div>
+
                 </div>
-
-                <div class="item featureTwo">
-                    <img src="media/img/home/featureTwo.jpg" alt="bg">
-                </div>
-
-                <div class="item featureThree">
-                    <img src="media/img/home/featureThree.jpg" alt="bg">
-                </div>
-
-            </div>
 
             <!-- Controls -->
                 <a class="left carousel-control" href="#home-carousel" data-slide="prev">
@@ -74,7 +74,7 @@
 
     <!-- BEGIN FEATURE BOXES -->
 
-    <div class="featureBoxes">
+    <div class="featureBoxes col-sm-12 col-md-12">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-4 featureBox">
@@ -100,7 +100,7 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-4 featureBox">
-                    <a class="col-xs-12" href="products/pickleJubilee.html"><img src="media/img/home/featureBox3.png"></a>
+                    <a class="col-xs-12" href="pickleJubilee.html"><img src="media/img/home/featureBox3.png"></a>
 
                     <img class="hidden-xs col-sm-4n featureBoxPost" src="media/img/home/featureBox3Post.png">
 

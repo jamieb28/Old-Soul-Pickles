@@ -6,9 +6,25 @@ VIEWS/HOME.LESS
 
 #page-home{
 	.featureBoxes{
+		margin-top: 80px;
+		@media (min-width: @screen-sm){
+			margin-top: -100px;
+			background: url('../img/home/featurePath.png') no-repeat center;
+			background-size: 100%;
+		}
+		@media (min-width: @screen-md){
+			max-width: 960px;
+			margin: -100px auto 60px;
+		}
 		.featureBox{
 			margin: 20px 0;
 			overflow: hidden;
+			@media (min-width: @screen-sm){
+				margin-top: 160px;
+			}
+			@media (min-width: @screen-md){
+				margin-top: 180px;
+			}
 			a{
 				color: @darkGreen;
 			}

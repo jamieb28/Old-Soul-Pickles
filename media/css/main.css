@@ -5512,23 +5512,59 @@ COMPONENTS/CAROUSEL.LESS
 
 =========================================*/
 #home-carousel {
-  margin: 150px 0 60px;
+  margin: 40px 0;
+  padding: -15px;
 }
 #home-carousel ol.carousel-indicators {
   margin-bottom: -50px;
 }
 #home-carousel ol.carousel-indicators li {
-  border-color: #5f1a2d;
-  background: #d1e6d3;
+  width: 15px;
+  height: 14px;
+  border: none;
+}
+#home-carousel ol.carousel-indicators li.bullet1 {
+  background: url('../img/home/bullet1.png') no-repeat center;
+}
+#home-carousel ol.carousel-indicators li.bullet2 {
+  background: url('../img/home/bullet2.png') no-repeat center;
+}
+#home-carousel ol.carousel-indicators li.bullet3 {
+  background: url('../img/home/bullet3.png') no-repeat center;
+}
+#home-carousel ol.carousel-indicators li.bullet4 {
+  background: url('../img/home/bullet4.png') no-repeat center;
+}
+#home-carousel ol.carousel-indicators li.bullet5 {
+  background: url('../img/home/bullet5.png') no-repeat center;
 }
 #home-carousel ol.carousel-indicators li.active {
-  background: #5f1a2d;
-  border-color: #5f1a2d;
+  background: url('../img/home/bulletActive.png') no-repeat center;
+}
+#home-carousel .carousel-control {
+  background: none;
+  opacity: .5;
+}
+#home-carousel .carousel-control span.icon-prev {
+  background: url('../img/home/iconPrev.png') no-repeat;
+  font-size: 0;
+  height: 35px;
+  width: 20px;
+  margin-top: 0;
+  background-size: 100%;
+}
+#home-carousel .carousel-control span.icon-next {
+  background: url('../img/home/iconNext.png') no-repeat;
+  font-size: 0;
+  height: 35px;
+  width: 20px;
+  margin-top: 0;
+  background-size: 100%;
 }
 @media (max-width: 767px) {
   #product-carousel {
     margin-top: 100px;
-    margin-bottom: 130px;
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 768px) {
@@ -5537,8 +5573,16 @@ COMPONENTS/CAROUSEL.LESS
     margin-bottom: 140px;
   }
 }
+@media (min-width: 992px) {
+  #product-carousel {
+    margin-bottom: 180px;
+  }
+}
+#product-carousel div.carousel-inner img {
+  width: 100%;
+}
 #product-carousel ol.carousel-indicators {
-  margin-bottom: -130px;
+  margin-bottom: -100px;
   width: 100%;
   left: 0;
   margin-left: 0;
@@ -5546,18 +5590,122 @@ COMPONENTS/CAROUSEL.LESS
 }
 @media (min-width: 768px) {
   #product-carousel ol.carousel-indicators {
-    margin-bottom: -140px;
+    margin-bottom: -165px;
+  }
+}
+@media (min-width: 992px) {
+  #product-carousel ol.carousel-indicators {
+    margin-bottom: -180px;
   }
 }
 #product-carousel ol.carousel-indicators li {
-  height: 100px;
+  width: 33.33333333333333%;
+  height: 75px;
   border-radius: 0;
   border: none;
   margin: 0;
-  background-size: 10%;
+  background: #fff;
 }
-#product-carousel ol.carousel-indicators li.active {
-  border: none;
+@media (min-width: 768px) {
+  #product-carousel ol.carousel-indicators li {
+    height: 150px;
+  }
+}
+#product-carousel ol.carousel-indicators li.productJar.pickleJubilee {
+  background: url('../img/products/pickleJubilee/jar.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productCombo.pickleJubilee {
+  background: url('../img/products/pickleJubilee/combo.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productFood.pickleJubilee {
+  background: url('../img/products/pickleJubilee/product.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productJar.goldilocksPickles {
+  background: url('../img/products/pickles/jar.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productCombo.goldilocksPickles {
+  background: url('../img/products/pickles/combo.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productFood.goldilocksPickles {
+  background: url('../img/products/pickles/product.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productJar.apricotPepperJelly {
+  background: url('../img/products/apricotPepperJelly/jar.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productCombo.apricotPepperJelly {
+  background: url('../img/products/apricotPepperJelly/combo.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productJar.beets {
+  background: url('../img/products/beets/jar.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productCombo.beets {
+  background: url('../img/products/beets/combo.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productFood.beets {
+  background: url('../img/products/beets/product.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productJar.zucchini {
+  background: url('../img/products/zucchini/jar.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productCombo.zucchini {
+  background: url('../img/products/zucchini/combo.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productFood.zucchini {
+  background: url('../img/products/zucchini/product.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productJar.spicyPickles {
+  background: url('../img/products/spicyPickles/jar.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productCombo.spicyPickles {
+  background: url('../img/products/spicyPickles/combo.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productFood.spicyPickles {
+  background: url('../img/products/spicyPickles/product.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productJar.dillyBeans {
+  background: url('../img/products/dillyBeans/jar.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productCombo.dillyBeans {
+  background: url('../img/products/dillyBeans/combo.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productFood.dillyBeans {
+  background: url('../img/products/dillyBeans/product.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productJar.fudgeySauce {
+  background: url('../img/products/fudgeySauce/jar.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productCombo.fudgeySauce {
+  background: url('../img/products/fudgeySauce/combo.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productJar.caramel {
+  background: url('../img/products/caramel/jar.jpg') no-repeat center;
+  background-size: 100%;
+}
+#product-carousel ol.carousel-indicators li.productCombo.caramel {
+  background: url('../img/products/caramel/combo.jpg') no-repeat center;
+  background-size: 100%;
 }
 /* =========================================
 
@@ -5616,9 +5764,35 @@ COMPONENTS/FOOTER.LESS
 VIEWS/HOME.LESS
 
 =========================================*/
+#page-home .featureBoxes {
+  margin-top: 80px;
+}
+@media (min-width: 768px) {
+  #page-home .featureBoxes {
+    margin-top: -100px;
+    background: url('../img/home/featurePath.png') no-repeat center;
+    background-size: 100%;
+  }
+}
+@media (min-width: 992px) {
+  #page-home .featureBoxes {
+    max-width: 960px;
+    margin: -100px auto 60px;
+  }
+}
 #page-home .featureBoxes .featureBox {
   margin: 20px 0;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  #page-home .featureBoxes .featureBox {
+    margin-top: 160px;
+  }
+}
+@media (min-width: 992px) {
+  #page-home .featureBoxes .featureBox {
+    margin-top: 180px;
+  }
 }
 #page-home .featureBoxes .featureBox a {
   color: #a7af39;
@@ -5771,28 +5945,23 @@ VIEWS/PICKLING.LESS
 #page-pickling .pickling-page .picklingVideo {
   margin: 25px auto;
 }
-#page-pickling .pickling-page .picklingVideo iframe {
+@media (min-width: 768px) {
+  #page-pickling .pickling-page .picklingVideo {
+    margin: 40px 0;
+  }
+}
+#page-pickling .pickling-page .picklingVideo video {
   width: 100%;
-  height: auto;
-  margin: 0 auto;
+  min-height: 120px;
   padding: 0;
   border: none;
-  border-image: url('../img/pickling/videoBorder.png') 47% repeat;
-  border-width: 8px;
-}
-@media (min-width: 768px) {
-  #page-pickling .pickling-page .picklingVideo iframe {
-    width: 80%;
-    min-height: 319px;
-    margin: 0 10%;
-  }
 }
 #page-pickling .pickling-page .picklingProcess {
   margin: 40px 0 0px;
 }
 @media (min-width: 768px) {
   #page-pickling .pickling-page .picklingProcess {
-    background: #d1e6d3;
+    background-color: #d1e6d3;
     overflow: hidden;
     border-radius: 10px;
     padding: 20px 0;
@@ -5835,14 +6004,13 @@ VIEWS/PICKLING.LESS
 @media (min-width: 768px) {
   #page-pickling .pickling-page .picklingProcess .step1 .stepDirections {
     margin-top: 20px;
+    background: #d1e6d3;
+    padding: 10px 0;
   }
 }
 @media (min-width: 992px) {
   #page-pickling .pickling-page .picklingProcess .step1 .stepDirections {
     margin-top: 40px;
-    background: #d1e6d3;
-    border-radius: 5px;
-    padding: 10px;
   }
 }
 @media (min-width: 992px) {
@@ -5864,6 +6032,8 @@ VIEWS/PICKLING.LESS
 @media (min-width: 768px) {
   #page-pickling .pickling-page .picklingProcess .step2 .stepDirections {
     margin-top: 100px;
+    background: #d1e6d3;
+    padding: 10px 0;
   }
 }
 @media (min-width: 992px) {
@@ -5889,6 +6059,8 @@ VIEWS/PICKLING.LESS
 @media (min-width: 768px) {
   #page-pickling .pickling-page .picklingProcess .step3 .stepDirections {
     margin-top: 80px;
+    background: #d1e6d3;
+    padding: 10px 0;
   }
 }
 @media (min-width: 992px) {
@@ -5914,6 +6086,8 @@ VIEWS/PICKLING.LESS
 @media (min-width: 768px) {
   #page-pickling .pickling-page .picklingProcess .step4 .stepDirections {
     margin-top: 40px;
+    background: #d1e6d3;
+    padding: 10px 0;
   }
 }
 @media (min-width: 992px) {
@@ -5923,27 +6097,30 @@ VIEWS/PICKLING.LESS
 }
 @media (min-width: 992px) {
   #page-pickling .pickling-page .picklingProcess .step5 {
-    margin-top: -100px;
+    margin-top: -60px;
   }
 }
 @media (min-width: 768px) {
   #page-pickling .pickling-page .picklingProcess .step5 img {
-    margin-top: 50px;
+    margin-top: -225px;
   }
 }
 @media (min-width: 992px) {
   #page-pickling .pickling-page .picklingProcess .step5 img {
     width: 75%;
+    margin-top: 30px;
   }
 }
 @media (min-width: 768px) {
   #page-pickling .pickling-page .picklingProcess .step5 .stepDirections {
-    margin-top: 100px;
+    margin-top: 150px;
+    background: #d1e6d3;
+    padding: 10px 0;
   }
 }
 @media (min-width: 992px) {
   #page-pickling .pickling-page .picklingProcess .step5 .stepDirections {
-    margin-top: 150px;
+    margin-top: 175px;
   }
 }
 @media (min-width: 992px) {
@@ -5958,13 +6135,14 @@ VIEWS/PICKLING.LESS
 }
 @media (min-width: 992px) {
   #page-pickling .pickling-page .picklingProcess .step6 img {
-    width: 60%;
-    margin-top: -75px;
+    margin-top: -50px;
   }
 }
 @media (min-width: 768px) {
   #page-pickling .pickling-page .picklingProcess .step6 .stepDirections {
     margin-top: 75px;
+    background: #d1e6d3;
+    padding: 10px 0;
   }
 }
 @media (min-width: 992px) {
@@ -5990,6 +6168,8 @@ VIEWS/PICKLING.LESS
 @media (min-width: 768px) {
   #page-pickling .pickling-page .picklingProcess .step7 .stepDirections {
     margin-top: 100px;
+    background: #d1e6d3;
+    padding: 10px 0;
   }
 }
 @media (min-width: 992px) {
@@ -6017,6 +6197,8 @@ VIEWS/PICKLING.LESS
 @media (min-width: 768px) {
   #page-pickling .pickling-page .picklingProcess .step8 .stepDirections {
     margin-top: 120px;
+    background: #d1e6d3;
+    padding: 10px 0;
   }
 }
 @media (min-width: 992px) {
@@ -6024,19 +6206,31 @@ VIEWS/PICKLING.LESS
     margin-top: 150px;
   }
 }
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step9 {
+    margin-top: -40px;
+  }
+}
 @media (min-width: 768px) {
   #page-pickling .pickling-page .picklingProcess .step9 img {
     margin-top: 20px;
   }
 }
+@media (min-width: 992px) {
+  #page-pickling .pickling-page .picklingProcess .step9 img {
+    margin-top: -40px;
+  }
+}
 @media (min-width: 768px) {
   #page-pickling .pickling-page .picklingProcess .step9 .stepDirections {
     margin-top: 80px;
+    background: #d1e6d3;
+    padding: 10px;
   }
 }
 @media (min-width: 992px) {
   #page-pickling .pickling-page .picklingProcess .step9 .stepDirections {
-    margin-top: 150px;
+    margin-top: 100px;
   }
 }
 /* =========================================
@@ -6045,13 +6239,14 @@ VIEWS/PRODUCTS.LESS
 
 =========================================*/
 #page-products .products {
-  margin: 40px 0;
+  margin: 100px 0;
 }
 @media (min-width: 768px) {
   #page-products .products {
     background: url('../img/products/productBG.jpg') no-repeat;
     background-size: 100%;
     overflow: hidden;
+    margin: 40px 0;
   }
 }
 #page-products .products .product {
@@ -6257,9 +6452,6 @@ VIEWS/RECIPES.LESS
     margin-top: 0px;
   }
 }
-#page-recipes ul.nav.nav-tabs li {
-  width: 100%;
-}
 #page-recipes ul.nav.nav-tabs li a {
   color: #a7af39;
   width: 100%;
@@ -6267,6 +6459,10 @@ VIEWS/RECIPES.LESS
   font-family: 'halohandletterregular';
   font-size: 28px;
   text-transform: lowercase;
+}
+#page-recipes ul.nav.nav-tabs li a:hover {
+  background: #d1e6d3;
+  border-bottom: none;
 }
 #page-recipes ul.nav.nav-tabs li.active > a {
   background-color: #d6d867;
@@ -6277,7 +6473,8 @@ VIEWS/RECIPES.LESS
 #page-recipes .recipe {
   margin: 40px 0;
   background: #d1e6d3;
-  padding: 40px 20px;
+  border-radius: 10px;
+  padding: 20px;
 }
 #page-recipes .recipe img {
   background-size: 100%;
@@ -6320,7 +6517,7 @@ VIEWS/RECIPES.LESS
   color: #5f1a2d;
   font-family: Garamond, Georgia, Serif;
   font-size: 16px;
-  overflow: hidden;
+  float: left;
 }
 /* =========================================
 
@@ -6328,26 +6525,104 @@ VIEWS/CONTACT.LESS
 
 =========================================*/
 #page-contact .contactInfo {
-  margin-bottom: 40px;
+  margin-top: 100px;
+}
+@media (min-width: 768px) {
+  #page-contact .contactInfo {
+    margin-top: 0px;
+  }
+}
+#page-contact .contactInfo .indContact {
+  margin-bottom: 30px;
+}
+#page-contact .contactInfo .indContact h3 {
+  font-family: 'halohandletterregular';
+  font-size: 40px;
+  color: #5f1a2d;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  #page-contact .contactInfo .indContact h3 {
+    font-size: 48px;
+  }
+}
+#page-contact .contactInfo .indContact p {
+  width: 100%;
+  color: #5f1a2d;
+  font-size: 18px;
+  margin: 0;
+}
+#page-contact .contactInfo .indContact p > a {
+  color: #a7af39;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+}
+#page-contact .contactInfo .indContact p.farmersMarket {
+  font-weight: 600;
+}
+#page-contact .contactInfo ul.socialMedia {
+  list-style: none;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #page-contact .contactInfo ul.socialMedia {
+    margin-bottom: 30px;
+  }
+}
+#page-contact .contactInfo ul.socialMedia li {
+  float: left;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  #page-contact .contactInfo ul.socialMedia li {
+    width: 33%;
+  }
+}
+#page-contact .contactInfo ul.socialMedia li a {
+  float: left;
+  width: 100%;
+  height: 50px;
+}
+#page-contact .contactInfo ul.socialMedia li a img {
+  float: left;
+  width: 50%;
 }
 #page-contact .contactInfo form {
   margin-top: 20px;
+  background-color: #d6d867;
+  padding: 20px;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  #page-contact .contactInfo form {
+    margin-top: 0px;
+  }
+}
+#page-contact .contactInfo form legend {
+  border: none;
+}
+#page-contact .contactInfo form legend h3 {
+  font-family: 'halohandletterregular';
+  font-size: 40px;
+  color: #5f1a2d;
 }
 #page-contact .contactInfo form .form-group {
   margin-bottom: 20px;
 }
-#page-contact .upcomingEvents {
-  margin: 60px 0 60px;
+#page-contact .contactInfo form .form-group label {
+  color: #5f1a2d;
+  font-size: 14px;
 }
-#page-contact .upcomingEvents h1 {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 20px;
+#page-contact .contactInfo form .form-group input {
+  border-color: #a7af39;
 }
-#page-contact .upcomingEvents .eventInfo {
-  text-align: center;
-  margin-bottom: 20px;
-}
-#page-contact .upcomingEvents .eventInfo p {
-  line-height: 1.15em;
+#page-contact .contactInfo form button {
+  color: #5f1a2d;
+  background: #d1e6d3;
+  border-color: #a7af39;
 }

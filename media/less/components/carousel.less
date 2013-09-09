@@ -5,50 +5,202 @@ COMPONENTS/CAROUSEL.LESS
 =========================================*/
 
 #home-carousel{
-	margin: 150px 0 60px;
+	margin: 40px 0;
+	padding: -15px;
+	// background: url('../img/home/carouselBorder.png') no-repeat center;
+	// background-size: 100%;
+	// height: 382px;
+	// border: 10px solid transparent;
+	// -moz-border-image:url("../img/home/carouselBorder.png") center 10 10 repeat; /* Old firefox */
+	// -webkit-border-image:url("../img/home/carouselBorder.png") 10 10 repeat; /* Safari */
+	// -o-border-image:url("../img/home/carouselBorder.png") 10 10 repeat; /* Opera */
+	// border-image:url("../img/home/carouselBorder.png") 10 10 repeat;
 	ol.carousel-indicators{
 		margin-bottom: -50px;
 		li{
-			border-color:@purple;
-			background: @seafoam;
+			width: 15px;
+			height: 14px;
+			border: none;
+		}
+		li.bullet1{
+			background: url('../img/home/bullet1.png') no-repeat center;
+		}
+		li.bullet2{
+			background: url('../img/home/bullet2.png') no-repeat center;
+		}
+		li.bullet3{
+			background: url('../img/home/bullet3.png') no-repeat center;
+		}
+		li.bullet4{
+			background: url('../img/home/bullet4.png') no-repeat center;
+		}
+		li.bullet5{
+			background: url('../img/home/bullet5.png') no-repeat center;
 		}
 		li.active{
-			background: @purple;
-			border-color:@purple;
+			background: url('../img/home/bulletActive.png') no-repeat center;
 		}	
 	}
 	div.carousel-inner{
 
+	}
+	.carousel-control{
+		background: none;
+		opacity: .5;
+		span.icon-prev {
+			background: url('../img/home/iconPrev.png') no-repeat;
+			font-size: 0;
+			height: 35px;
+			width: 20px;
+			margin-top: 0;
+			background-size: 100%;
+		}
+		span.icon-next {
+			background: url('../img/home/iconNext.png') no-repeat;
+			font-size: 0;
+			height: 35px;
+			width: 20px;
+			margin-top: 0;
+			background-size: 100%;
+		}
 	}
 }
 
 #product-carousel{
 	@media (max-width: @screen-xs-max){
 		margin-top: 100px;
-		margin-bottom: 130px;
+		margin-bottom: 100px;
 	}
 	@media (min-width: @screen-sm){
 		margin-top: 0px;
 		margin-bottom: 140px;
 	}
+	@media (min-width: @screen-md){
+		margin-bottom: 180px;
+	}
+	div.carousel-inner{
+		img{
+			width: 100%;
+		}
+	}
 	ol.carousel-indicators{
-		margin-bottom: -130px;
+		margin-bottom: -100px;
 		width: 100%;
 		left: 0;
 		margin-left: 0;
 		padding: 15px;
 		@media (min-width: @screen-sm){
-			margin-bottom: -140px;
+			margin-bottom: -165px;
+		}
+		@media (min-width: @screen-md){
+			margin-bottom: -180px;
 		}
 		li{
-			height: 100px;
+			width: 33.33333333333333%;
+			height: 75px;
 			border-radius: 0;
 			border: none;
 			margin: 0;
-			background-size: 10%;
+			background: #fff;
+			@media (min-width: @screen-sm) {
+				height: 150px;
+			}
 		}
-		li.active {
-			border: none;
+		li.productJar.pickleJubilee{
+			background: url('../img/products/pickleJubilee/jar.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productCombo.pickleJubilee{
+			background: url('../img/products/pickleJubilee/combo.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productFood.pickleJubilee{
+			background: url('../img/products/pickleJubilee/product.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productJar.goldilocksPickles{
+			background: url('../img/products/pickles/jar.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productCombo.goldilocksPickles{
+			background: url('../img/products/pickles/combo.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productFood.goldilocksPickles{
+			background: url('../img/products/pickles/product.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productJar.apricotPepperJelly{
+			background: url('../img/products/apricotPepperJelly/jar.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productCombo.apricotPepperJelly{
+			background: url('../img/products/apricotPepperJelly/combo.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productJar.beets{
+			background: url('../img/products/beets/jar.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productCombo.beets{
+			background: url('../img/products/beets/combo.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productFood.beets{
+			background: url('../img/products/beets/product.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productJar.zucchini{
+			background: url('../img/products/zucchini/jar.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productCombo.zucchini{
+			background: url('../img/products/zucchini/combo.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productFood.zucchini{
+			background: url('../img/products/zucchini/product.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productJar.spicyPickles{
+			background: url('../img/products/spicyPickles/jar.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productCombo.spicyPickles{
+			background: url('../img/products/spicyPickles/combo.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productFood.spicyPickles{
+			background: url('../img/products/spicyPickles/product.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productJar.dillyBeans{
+			background: url('../img/products/dillyBeans/jar.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productCombo.dillyBeans{
+			background: url('../img/products/dillyBeans/combo.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productFood.dillyBeans{
+			background: url('../img/products/dillyBeans/product.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productJar.fudgeySauce{
+			background: url('../img/products/fudgeySauce/jar.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productCombo.fudgeySauce{
+			background: url('../img/products/fudgeySauce/combo.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productJar.caramel{
+			background: url('../img/products/caramel/jar.jpg') no-repeat center;
+			background-size: 100%;
+		}
+		li.productCombo.caramel{
+			background: url('../img/products/caramel/combo.jpg') no-repeat center;
+			background-size: 100%;
 		}
 	}
 }

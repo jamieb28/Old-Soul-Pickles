@@ -13,15 +13,17 @@ VIEWS/RECIPES.LESS
 			margin-top: 0px;
 		}
 		li {
-			width: 100%;
 			a{
-				color: @darkGreen;
-				// font-size: 18px;
+				color: @darkGreen;;
 				width: 100%;
 				text-align: center;
 				font-family: 'halohandletterregular';
 				font-size: 28px;
 				text-transform: lowercase;
+			}
+			a:hover{
+				background: @seafoam;
+				border-bottom: none;
 			}
 		}
 		li.active > a{
@@ -34,7 +36,8 @@ VIEWS/RECIPES.LESS
 	.recipe{
 		margin: 40px 0;
 		background: @seafoam;
-		padding: 40px 20px;
+		border-radius: 10px;
+		padding: 20px;
 		img{
 			background-size: 100%;
 			background-position: center;
@@ -74,7 +77,7 @@ VIEWS/RECIPES.LESS
 			color: @purple;
 			font-family: Garamond, Georgia, Serif;
 			font-size: 16px;
-			overflow: hidden;
+			float: left; 
 		}
 	}
 }
